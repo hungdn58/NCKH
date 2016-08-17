@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/E:/Hung%20ham/CNTT/NetBeanProject/SpellingCheckWebService/src/java/com/uet/spellingcheck/spellcheck/SpellChecker.java</file>
+            <file>file:/E:/Hung%20ham/CNTT/NetBeanProject/SpellingCheckWebService/nbproject/build-impl.xml</file>
+            <file>file:/E:/Hung%20ham/CNTT/NetBeanProject/SpellingCheckWebService/src/java/com/uet/spellingcheck/spellcheck/SpellcheckUI.java</file>
+            <file>file:/E:/Hung%20ham/CNTT/NetBeanProject/SpellingCheckWebService/src/java/com/uet/spellingcheck/spellcheck/Utility.java</file>
+            <file>file:/E:/Hung%20ham/CNTT/NetBeanProject/SpellingCheckWebService/src/java/com/uet/spellingcheck/ApplicationConfig.java</file>
+            <file>file:/E:/Hung%20ham/CNTT/NetBeanProject/SpellingCheckWebService/web/index.jsp</file>
+            <file>file:/E:/Hung%20ham/CNTT/NetBeanProject/SpellingCheckWebService/src/java/com/uet/spellingcheck/ServiceResource.java</file>
+            <file>file:/E:/Hung%20ham/CNTT/NetBeanProject/SpellingCheckWebService/src/java/com/uet/spellingcheck/spellcheck/Trigram.java</file>
+            <file>file:/E:/Hung%20ham/CNTT/NetBeanProject/SpellingCheckWebService/src/java/com/uet/spellingcheck/spellcheck/Bigram.java</file>
+            <file>file:/E:/Hung%20ham/CNTT/NetBeanProject/SpellingCheckWebService/src/java/com/uet/spellingcheck/spellcheck/UnigramExtractsign.java</file>
+            <file>file:/E:/Hung%20ham/CNTT/NetBeanProject/SpellingCheckWebService/src/java/com/uet/spellingcheck/spellcheck/Main.java</file>
+            <file>file:/E:/Hung%20ham/CNTT/NetBeanProject/SpellingCheckWebService/src/java/com/uet/spellingcheck/spellcheck/StringConstant.java</file>
+            <file>file:/E:/Hung%20ham/CNTT/NetBeanProject/SpellingCheckWebService/src/java/com/uet/spellingcheck/spellcheck/Unigram.java</file>
+            <file>file:/E:/Hung%20ham/CNTT/NetBeanProject/SpellingCheckWebService/web/META-INF/context.xml</file>
+            <file>file:/E:/Hung%20ham/CNTT/NetBeanProject/SpellingCheckWebService/src/java/com/uet/spellingcheck/spellcheck/SpellingError.java</file>
+        </group>
+    </open-files>
+</project-private>
