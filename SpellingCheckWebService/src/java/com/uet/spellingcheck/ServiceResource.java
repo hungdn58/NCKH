@@ -47,7 +47,9 @@ public class ServiceResource {
      */
     public ServiceResource() {
         try {
-            sp = new SpellChecker("E:/ngramdict/");
+            if(sp == null) {
+                sp = new SpellChecker("E:/ngramdict/");
+            }
 //            res = new Restoration();
         } catch (Exception ex) {
             Logger.getLogger(ServiceResource.class.getName()).log(Level.SEVERE, null, ex);
@@ -101,6 +103,15 @@ public class ServiceResource {
         return checkSpelling(text);
     }
     
+    @Path("paragraph/check")
+    @POST
+    @Consumes("application/x-www-form-urlencoded")
+    @Produces("text/plain")
+    public String checkParagraph(@FormParam("string") String paragraph) {
+        String text = paragraph.toString();
+        return checkTextSpelling(text);
+    }
+    
     private String checkSpelling(String content) {                                         
         // TODO add your handling code here:
         //String inputText = this.jTextArea1.getText();
@@ -120,6 +131,43 @@ public class ServiceResource {
 //                        lines[i] = res.restoration(lines[i]);
 //                    }
                     result += sp.processSentence(lines[i]) + "\n";
+                    long end = System.currentTimeMillis();
+                    runningTime = (end - start)*1.0/1000;
+                } catch (Exception ex) {
+                    Logger.getLogger(SpellcheckUI.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+            output = result + " - " + runningTime;
+            //System.out.println(result);
+        } else {
+            output = "empty input";
+        }
+//        String[] split = inputText.split("\n");
+//        for(int i = 0;i < split.length;i++)
+//            System.out.println(split[i]);
+//        System.out.println(inputText);
+        return output;
+    }  
+    
+    private String checkTextSpelling(String content) {                                         
+        // TODO add your handling code here:
+        //String inputText = this.jTextArea1.getText();
+        String output = "";
+        double runningTime = 0.0;
+        if (content.length() > 0) {
+            //System.out.println(inputText);
+            String[] lines = content.split("\n");
+//            System.out.println("lines length " + lines.length);
+            String result = "";
+            for (int i = 0; i < lines.length; i++) {
+//                System.out.println(lines[0]);
+                try {
+                    long start = System.currentTimeMillis();
+                    //lines[i] = res.restoration(lines[i]);
+//                    if(this.jRadioButton2.isSelected()){
+//                        lines[i] = res.restoration(lines[i]);
+//                    }
+                    result += sp.CheckSentence(content) + "\n";
                     long end = System.currentTimeMillis();
                     runningTime = (end - start)*1.0/1000;
                 } catch (Exception ex) {
