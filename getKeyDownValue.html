@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(":focus").css("background-color", "yellow");
+});
+var targ;
+function whichElement(e) {
+    
+    if (!e) {
+        var e = window.event;
+    }
+    if (e.target) {
+        targ=e.target;
+    } else if (e.srcElement) {
+        targ=e.srcElement;
+    }
+    var tname;
+    tname = targ.value;
+    targ.addEventListener('keyup',sum,false);
+    console.log(tname);
+    var focusedElement = document.activeElement;
+}
+
+function sum(){ 
+   console.log(targ.value);
+   targ.style.color = "red";
+}
+
+</script>
+</head>
+<body onmousedown="whichElement(event)">
+
+<input type="text" />
+ 
+</body>
+</html>
